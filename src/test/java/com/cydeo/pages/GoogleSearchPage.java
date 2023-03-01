@@ -30,9 +30,9 @@ public class GoogleSearchPage {
 
     }
 
-//    public WebElement capitalElement(String capital){
-//        return Driver.getDriver().findElement(By.linkText(capital));
-//    }
+   public WebElement capitalElement(String capital){
+        return Driver.getDriver().findElement(By.linkText(capital));
+   }
 
     public String getCapital(){
         return Driver.getDriver().findElement(By.xpath("//a[@class='FLP8od']")).getText();
