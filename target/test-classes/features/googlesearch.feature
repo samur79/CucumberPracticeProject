@@ -35,4 +35,3 @@ Feature: Google search functionality
       |UK     |London       |
       |Latvia |Riga         |
       |Greece |Athens       |
-

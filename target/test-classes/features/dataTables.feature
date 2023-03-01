@@ -1,7 +1,7 @@
-Feature:  examples of Cucumber table implementations
-@wip
-  Scenario: list of fruits I like
-    Then  user should see fruits I like
+Feature: Examples of Cucumber data table implementations
+  @smoke
+  Scenario: List of fruits I like
+    Then user should see fruits I like
       | kiwi        |
       | banana      |
       | cucumber    |
@@ -9,7 +9,10 @@ Feature:  examples of Cucumber table implementations
       | mango       |
       | grape       |
       | pomegranate |
-    #to beautify the the list ctrl+alt+L
+
+    #to beautify the pipes above
+    #mac: command + option + L
+    #windows: control + alt + L
 
 
   Scenario: User should be able to see all 12 months in months

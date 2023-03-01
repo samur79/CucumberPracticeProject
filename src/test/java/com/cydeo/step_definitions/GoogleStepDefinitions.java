@@ -12,25 +12,27 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GoogleStepDefinitions {
+
     GoogleSearchPage googleSearchPage = new GoogleSearchPage();
     @Before
-    public void accceptall(){
-        googleSearchPage.acceptAll.click();
+    public void acceptAll(){
+        Driver.getDriver().get("https://www.google.com/");
+
     }
 
     @When("user types apple and clicks enter")
     public void user_types_and_clicks_enter2() {
 
-        googleSearchPage.searchBox.sendKeys("apple" + Keys.ENTER);
+        googleSearchPage.searchAnItem("apple");
 
     }
 
     @When("user types {string} and clicks enter")
     public void user_types_and_clicks_enter(String searchKeyword) {
 
-      WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
-      wait.until(ExpectedConditions.visibilityOf(googleSearchPage.searchBox));
-        googleSearchPage.searchBox.sendKeys(searchKeyword + Keys.ENTER);
+//        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
+//        wait.until(ExpectedConditions.visibilityOf(googleSearchPage.searchBox));
+        googleSearchPage.searchAnItem(searchKeyword);
 
     }
 
@@ -79,8 +81,8 @@ public class GoogleStepDefinitions {
 
     @Then("User should see {string} in the result")
     public void userShouldSeeInTheResult(String expectedCapital) {
-        //String actualValue = googleSearchPage.getCapital();
-       // Assert.assertEquals(expectedCapital,actualValue);
+        String actualValue = googleSearchPage.getCapital();
+        Assert.assertTrue(expectedCapital.contains(actualValue));
     }
 
 }

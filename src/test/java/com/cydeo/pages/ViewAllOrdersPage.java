@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ViewAllOrdersPage {
     public ViewAllOrdersPage(){
+
         PageFactory.initElements(Driver.getDriver(), this);
     }
 

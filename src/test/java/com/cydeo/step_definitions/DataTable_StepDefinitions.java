@@ -12,6 +12,7 @@ import org.junit.Assert;
 import java.util.List;
 
 public class DataTable_StepDefinitions {
+
     @Then("user should see fruits I like")
     public void user_should_see_fruits_i_like(List<String> fruits) {
 
@@ -39,6 +40,9 @@ public class DataTable_StepDefinitions {
         //Assert will check the size of the lists first. If it is matching it will check content 1 by 1.
 
     }
+
+
+
 
 
 }

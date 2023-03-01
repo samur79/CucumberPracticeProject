@@ -11,37 +11,53 @@ import org.openqa.selenium.TakesScreenshot;
 
 public class Hooks {
 
-    //import from io.cucumber.java not from jnuit
-//    @Before
-//    public void setupScenario(){
-//        System.out.println("==== Setting up browser using cucumber @Before");
-//
-//    }
-//    @Before("@login") // This is simlar to @Before in TestNG it runs before each Scenario
-//    public void setupScenarioForLogins(){
-//        System.out.println("==== Setting up browser using cucumber only @Before @login tag ");
-////@Before("@login") this will only apply to login scenarios
-//
-//    }
-    @After // This is simlar to @After in TestNG it runs after each Scenario
+    //import from io.cucumber.java not from junit
+    // @Before (order = 1)
+    public void setupScenario(){
+        System.out.println("====Setting up browser using cucumber @Before");
+    }
+
+    //@Before (value = "@login", order = 2)
+    public void setupScenarioForLogins(){
+        System.out.println("====this will only apply to scenarios with @login tag");
+    }
+
+    //@Before (value = "@db", order = 0)
+    public void setupForDatabaseScenarios(){
+        System.out.println("====this will only apply to scenarios with @db tag");
+    }
+
+
+    @After
     public void teardownScenario(Scenario scenario){
 
-        // How to get a screenshot when your scenario fails
-        if(scenario.isFailed()) {
-            byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+        //scenario.isFailed() --> if scenario fails this method will return TRUE boolean value
+
+
+        if (scenario.isFailed()){
+
+            byte [] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png", scenario.getName());
+
         }
+
+
+        //BrowserUtils.sleep(5);
         Driver.closeDriver();
 
-        //System.out.println("==== Closing browser using cucumber @After");
-        //System.out.println("==== Scenario ended take a screenshot.");
+        //System.out.println("====Closing browser using cucumber @After");
+        //System.out.println("====Scenario ended/ Take screenshot if failed!");
     }
-//    @BeforeStep
-//    public void setupStep(){
-//        System.out.println("--------- applying setup using @BeforeStep");
-//    }
-//    @AfterStep
-//    public void afterStep(){
-//        System.out.println("-------- applying teardown using @AfterStep");
-//    }
+
+    // @BeforeStep
+    public void setupStep(){
+        System.out.println("--------> applying setup using @BeforeStep");
+    }
+
+    //@AfterStep
+    public void afterStep(){
+        System.out.println("--------> applying tearDown using @AfterStep");
+    }
+
+
 }
