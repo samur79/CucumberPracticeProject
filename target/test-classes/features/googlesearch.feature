@@ -29,9 +29,9 @@ Feature: Google search functionality
     Examples:
       |country|capital|
       |Turkey |Ankara |
-      |USA    |Washington DC|
+      |the USA    |Washington, D.C.|
       |Ukraine|Kyiv         |
       |Gemany |Berlin       |
-      |UK     |London       |
+      |the UK     |London       |
       |Latvia |Riga         |
       |Greece |Athens       |
