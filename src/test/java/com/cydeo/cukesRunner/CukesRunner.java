@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         dryRun = false,
         // if dryRun=true it will only check the  steps and checks the missing ones so you can get the snippets of the missing ones if you have any
         //if dryRun=false it checks the steps and runs it as usual.
-        tags ="",
+        tags ="@smoke",
         //if I write @student infront of tag only that part of test will be executed
         publish = false /* will enable a functionality from cucumber to generate a public link for the report of our final execution of our code
                 --> the link will be automatically generated and printed in the console
