@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>01 Mar 2023, 11:09</td>
+      <td>02 Mar 2023, 15:19</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@femaleScientists</td>
-          <td      class="passed"    >65</td>
           <td >0</td>
-          <td >0</td>
+          <td      class="failed"    >5</td>
+          <td     class="skipped"   >60</td>
           <td >0</td>
           <td >0</td>
           <td class="total">65</td>
 
-          <td  class="passed"    >5</td>
           <td >0</td>
+          <td  class="failed"    >5</td>
           <td class="total">5</td>
 
-          <td class="duration" data-value="37336500200">37.336</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="40714900">0.040</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_5_2832481255.html">Web table user order feature</a>
+      <a href="report-feature_4_2832481255.html">Web table user order feature</a>
     </div>
 
 
@@ -181,12 +181,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">7.978</span>
+  <span class="lead-duration duration">0.008</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Template</span>
   <span class="name">User should be able to place order and order seen in web table</span>
 
@@ -197,16 +197,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -216,15 +216,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">user is already logged in and on order page</span>
 
-  <span class="lead-duration duration">3.195</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -232,6 +232,91 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>io.cucumber.core.exception.CucumberException:</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>io.cucumber.core.exception.CucumberException: Failed to instantiate class com.cydeo.step_definitions.Order_StepDefinitions
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
+	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
+	... 46 more
+Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAMUR', ip: '10.0.20.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.cydeo.utilities.Driver.getDriver(Driver.java:81)
+	at com.cydeo.pages.WebTableLoginPage.&lt;init&gt;(WebTableLoginPage.java:11)
+	at com.cydeo.step_definitions.Order_StepDefinitions.&lt;init&gt;(Order_StepDefinitions.java:20)
+	... 51 more
+Caused by: java.io.IOException: Unable to parse URL: http://100.24.242.134 :4444/wd/hub/session
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:64)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	... 57 more
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -247,11 +332,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">user selects product type <span class="argument">&quot;MoneyCog&quot;</span></span>
 
-  <span class="lead-duration duration">0.825</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -274,11 +359,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters quantity <span class="argument">2</span></span>
 
-  <span class="lead-duration duration">0.564</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -301,11 +386,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters customer name <span class="argument">&quot;Marie Curie&quot;</span></span>
 
-  <span class="lead-duration duration">0.336</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -328,11 +413,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters street <span class="argument">&quot;London st&quot;</span></span>
 
-  <span class="lead-duration duration">0.312</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -355,11 +440,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters city <span class="argument">&quot;London&quot;</span></span>
 
-  <span class="lead-duration duration">0.303</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -382,11 +467,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters state <span class="argument">&quot;England&quot;</span></span>
 
-  <span class="lead-duration duration">0.302</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -409,11 +494,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters zipcode <span class="argument">&quot;50505&quot;</span></span>
 
-  <span class="lead-duration duration">0.308</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -436,11 +521,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user selects credit card type <span class="argument">&quot;Visa&quot;</span></span>
 
-  <span class="lead-duration duration">0.650</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -463,11 +548,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters credit card number <span class="argument">&quot;1111222233334444&quot;</span></span>
 
-  <span class="lead-duration duration">0.354</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -490,11 +575,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters expiry date <span class="argument">&quot;12/24&quot;</span></span>
 
-  <span class="lead-duration duration">0.304</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -517,11 +602,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters process order button</span>
 
-  <span class="lead-duration duration">0.289</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -544,11 +629,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">user should see <span class="argument">&quot;Marie Curie&quot;</span> in first row of the web table</span>
 
-  <span class="lead-duration duration">0.232</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -575,9 +660,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-3">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-4">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -587,17 +672,99 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-3" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.162</span>
+  <span class="lead-duration duration">0.009</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
+          <a>Error message</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAMUR', ip: '10.0.20.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.cydeo.utilities.Driver.getDriver(Driver.java:81)
+	at com.cydeo.step_definitions.Hooks.teardownScenario(Hooks.java:39)
+Caused by: java.io.IOException: Unable to parse URL: http://100.24.242.134 :4444/wd/hub/session
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:64)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.cydeo.utilities.Driver.getDriver(Driver.java:81)
+	at com.cydeo.step_definitions.Hooks.teardownScenario(Hooks.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:101)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -614,7 +781,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_5_2832481255.html">Web table user order feature</a>
+      <a href="report-feature_4_2832481255.html">Web table user order feature</a>
     </div>
 
 
@@ -624,12 +791,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">7.170</span>
+  <span class="lead-duration duration">0.008</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Template</span>
   <span class="name">User should be able to place order and order seen in web table</span>
 
@@ -640,16 +807,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-4" class="collapse collapsable-details ">
+  <div id="element-6" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-7">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -659,15 +826,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details ">
+  <div id="steps-7" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">user is already logged in and on order page</span>
 
-  <span class="lead-duration duration">2.631</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -675,6 +842,91 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-8">
+          <a>io.cucumber.core.exception.CucumberException:</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details  in ">
+        <pre>io.cucumber.core.exception.CucumberException: Failed to instantiate class com.cydeo.step_definitions.Order_StepDefinitions
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
+	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
+	... 46 more
+Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAMUR', ip: '10.0.20.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.cydeo.utilities.Driver.getDriver(Driver.java:81)
+	at com.cydeo.pages.WebTableLoginPage.&lt;init&gt;(WebTableLoginPage.java:11)
+	at com.cydeo.step_definitions.Order_StepDefinitions.&lt;init&gt;(Order_StepDefinitions.java:20)
+	... 51 more
+Caused by: java.io.IOException: Unable to parse URL: http://100.24.242.134 :4444/wd/hub/session
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:64)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	... 57 more
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -690,11 +942,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">user selects product type <span class="argument">&quot;Familybea&quot;</span></span>
 
-  <span class="lead-duration duration">0.837</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -717,11 +969,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters quantity <span class="argument">3</span></span>
 
-  <span class="lead-duration duration">0.503</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -744,11 +996,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters customer name <span class="argument">&quot;Rosalind Franklin&quot;</span></span>
 
-  <span class="lead-duration duration">0.337</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -771,11 +1023,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters street <span class="argument">&quot;London st&quot;</span></span>
 
-  <span class="lead-duration duration">0.290</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -798,11 +1050,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters city <span class="argument">&quot;London&quot;</span></span>
 
-  <span class="lead-duration duration">0.284</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -825,11 +1077,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters state <span class="argument">&quot;England&quot;</span></span>
 
-  <span class="lead-duration duration">0.303</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -852,11 +1104,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters zipcode <span class="argument">&quot;50505&quot;</span></span>
 
-  <span class="lead-duration duration">0.282</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -879,11 +1131,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user selects credit card type <span class="argument">&quot;Visa&quot;</span></span>
 
-  <span class="lead-duration duration">0.568</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -906,11 +1158,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters credit card number <span class="argument">&quot;1111222233334444&quot;</span></span>
 
-  <span class="lead-duration duration">0.340</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -933,11 +1185,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters expiry date <span class="argument">&quot;12/24&quot;</span></span>
 
-  <span class="lead-duration duration">0.261</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -960,11 +1212,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters process order button</span>
 
-  <span class="lead-duration duration">0.305</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -987,11 +1239,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">user should see <span class="argument">&quot;Rosalind Franklin&quot;</span> in first row of the web table</span>
 
-  <span class="lead-duration duration">0.224</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1018,9 +1270,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-9">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1030,17 +1282,99 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-6" class="inner-level collapse collapsable-details ">
+    <div id="after-9" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.150</span>
+  <span class="lead-duration duration">0.006</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
+          <a>Error message</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAMUR', ip: '10.0.20.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.cydeo.utilities.Driver.getDriver(Driver.java:81)
+	at com.cydeo.step_definitions.Hooks.teardownScenario(Hooks.java:39)
+Caused by: java.io.IOException: Unable to parse URL: http://100.24.242.134 :4444/wd/hub/session
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:64)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.cydeo.utilities.Driver.getDriver(Driver.java:81)
+	at com.cydeo.step_definitions.Hooks.teardownScenario(Hooks.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:101)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1057,7 +1391,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_5_2832481255.html">Web table user order feature</a>
+      <a href="report-feature_4_2832481255.html">Web table user order feature</a>
     </div>
 
 
@@ -1067,12 +1401,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">7.238</span>
+  <span class="lead-duration duration">0.007</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Template</span>
   <span class="name">User should be able to place order and order seen in web table</span>
 
@@ -1083,16 +1417,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details ">
+  <div id="element-11" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-12">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1102,15 +1436,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details ">
+  <div id="steps-12" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">user is already logged in and on order page</span>
 
-  <span class="lead-duration duration">2.730</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -1118,6 +1452,91 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-13">
+          <a>io.cucumber.core.exception.CucumberException:</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details  in ">
+        <pre>io.cucumber.core.exception.CucumberException: Failed to instantiate class com.cydeo.step_definitions.Order_StepDefinitions
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
+	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
+	... 46 more
+Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAMUR', ip: '10.0.20.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.cydeo.utilities.Driver.getDriver(Driver.java:81)
+	at com.cydeo.pages.WebTableLoginPage.&lt;init&gt;(WebTableLoginPage.java:11)
+	at com.cydeo.step_definitions.Order_StepDefinitions.&lt;init&gt;(Order_StepDefinitions.java:20)
+	... 51 more
+Caused by: java.io.IOException: Unable to parse URL: http://100.24.242.134 :4444/wd/hub/session
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:64)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	... 57 more
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1133,11 +1552,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">user selects product type <span class="argument">&quot;Screenable&quot;</span></span>
 
-  <span class="lead-duration duration">0.851</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1160,11 +1579,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters quantity <span class="argument">4</span></span>
 
-  <span class="lead-duration duration">0.492</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1187,11 +1606,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters customer name <span class="argument">&quot;List Meitner&quot;</span></span>
 
-  <span class="lead-duration duration">0.311</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1214,11 +1633,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters street <span class="argument">&quot;London st&quot;</span></span>
 
-  <span class="lead-duration duration">0.286</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1241,11 +1660,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters city <span class="argument">&quot;London&quot;</span></span>
 
-  <span class="lead-duration duration">0.274</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1268,11 +1687,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters state <span class="argument">&quot;England&quot;</span></span>
 
-  <span class="lead-duration duration">0.283</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1295,11 +1714,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters zipcode <span class="argument">&quot;50505&quot;</span></span>
 
-  <span class="lead-duration duration">0.295</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1322,11 +1741,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user selects credit card type <span class="argument">&quot;Visa&quot;</span></span>
 
-  <span class="lead-duration duration">0.594</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1349,11 +1768,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters credit card number <span class="argument">&quot;1111222233334444&quot;</span></span>
 
-  <span class="lead-duration duration">0.329</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1376,11 +1795,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters expiry date <span class="argument">&quot;12/24&quot;</span></span>
 
-  <span class="lead-duration duration">0.302</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1403,11 +1822,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters process order button</span>
 
-  <span class="lead-duration duration">0.282</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1430,11 +1849,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">user should see <span class="argument">&quot;List Meitner&quot;</span> in first row of the web table</span>
 
-  <span class="lead-duration duration">0.204</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1461,9 +1880,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-9">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-14">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1473,17 +1892,99 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-9" class="inner-level collapse collapsable-details ">
+    <div id="after-14" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.147</span>
+  <span class="lead-duration duration">0.004</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-15">
+          <a>Error message</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAMUR', ip: '10.0.20.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.cydeo.utilities.Driver.getDriver(Driver.java:81)
+	at com.cydeo.step_definitions.Hooks.teardownScenario(Hooks.java:39)
+Caused by: java.io.IOException: Unable to parse URL: http://100.24.242.134 :4444/wd/hub/session
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:64)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.cydeo.utilities.Driver.getDriver(Driver.java:81)
+	at com.cydeo.step_definitions.Hooks.teardownScenario(Hooks.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:101)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1500,7 +2001,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_5_2832481255.html">Web table user order feature</a>
+      <a href="report-feature_4_2832481255.html">Web table user order feature</a>
     </div>
 
 
@@ -1510,12 +2011,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">7.820</span>
+  <span class="lead-duration duration">0.008</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-16">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Template</span>
   <span class="name">User should be able to place order and order seen in web table</span>
 
@@ -1526,16 +2027,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-10" class="collapse collapsable-details ">
+  <div id="element-16" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1545,15 +2046,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-11" class="inner-level collapse collapsable-details ">
+  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">user is already logged in and on order page</span>
 
-  <span class="lead-duration duration">3.088</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -1561,6 +2062,91 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
+          <a>io.cucumber.core.exception.CucumberException:</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details  in ">
+        <pre>io.cucumber.core.exception.CucumberException: Failed to instantiate class com.cydeo.step_definitions.Order_StepDefinitions
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
+	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
+	... 46 more
+Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAMUR', ip: '10.0.20.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.cydeo.utilities.Driver.getDriver(Driver.java:81)
+	at com.cydeo.pages.WebTableLoginPage.&lt;init&gt;(WebTableLoginPage.java:11)
+	at com.cydeo.step_definitions.Order_StepDefinitions.&lt;init&gt;(Order_StepDefinitions.java:20)
+	... 51 more
+Caused by: java.io.IOException: Unable to parse URL: http://100.24.242.134 :4444/wd/hub/session
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:64)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	... 57 more
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1576,11 +2162,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">user selects product type <span class="argument">&quot;MoneyCog&quot;</span></span>
 
-  <span class="lead-duration duration">0.762</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1603,11 +2189,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters quantity <span class="argument">5</span></span>
 
-  <span class="lead-duration duration">0.534</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1630,11 +2216,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters customer name <span class="argument">&quot;Chien-Shiung Wu&quot;</span></span>
 
-  <span class="lead-duration duration">0.405</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1657,11 +2243,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters street <span class="argument">&quot;London st&quot;</span></span>
 
-  <span class="lead-duration duration">0.297</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1684,11 +2270,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters city <span class="argument">&quot;London&quot;</span></span>
 
-  <span class="lead-duration duration">0.297</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1711,11 +2297,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters state <span class="argument">&quot;England&quot;</span></span>
 
-  <span class="lead-duration duration">0.315</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1738,11 +2324,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters zipcode <span class="argument">&quot;50505&quot;</span></span>
 
-  <span class="lead-duration duration">0.318</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1765,11 +2351,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user selects credit card type <span class="argument">&quot;Visa&quot;</span></span>
 
-  <span class="lead-duration duration">0.654</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1792,11 +2378,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters credit card number <span class="argument">&quot;1111222233334444&quot;</span></span>
 
-  <span class="lead-duration duration">0.345</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1819,11 +2405,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters expiry date <span class="argument">&quot;12/24&quot;</span></span>
 
-  <span class="lead-duration duration">0.287</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1846,11 +2432,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters process order button</span>
 
-  <span class="lead-duration duration">0.291</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1873,11 +2459,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">user should see <span class="argument">&quot;Chien-Shiung Wu&quot;</span> in first row of the web table</span>
 
-  <span class="lead-duration duration">0.221</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1904,9 +2490,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-19">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1916,17 +2502,99 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-12" class="inner-level collapse collapsable-details ">
+    <div id="after-19" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.149</span>
+  <span class="lead-duration duration">0.007</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-20">
+          <a>Error message</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAMUR', ip: '10.0.20.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.cydeo.utilities.Driver.getDriver(Driver.java:81)
+	at com.cydeo.step_definitions.Hooks.teardownScenario(Hooks.java:39)
+Caused by: java.io.IOException: Unable to parse URL: http://100.24.242.134 :4444/wd/hub/session
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:64)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.cydeo.utilities.Driver.getDriver(Driver.java:81)
+	at com.cydeo.step_definitions.Hooks.teardownScenario(Hooks.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:101)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1943,7 +2611,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_5_2832481255.html">Web table user order feature</a>
+      <a href="report-feature_4_2832481255.html">Web table user order feature</a>
     </div>
 
 
@@ -1953,12 +2621,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">7.128</span>
+  <span class="lead-duration duration">0.008</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Template</span>
   <span class="name">User should be able to place order and order seen in web table</span>
 
@@ -1969,16 +2637,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-13" class="collapse collapsable-details ">
+  <div id="element-21" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-22">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1988,15 +2656,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-14" class="inner-level collapse collapsable-details ">
+  <div id="steps-22" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">user is already logged in and on order page</span>
 
-  <span class="lead-duration duration">2.728</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -2004,6 +2672,91 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-23">
+          <a>io.cucumber.core.exception.CucumberException:</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details  in ">
+        <pre>io.cucumber.core.exception.CucumberException: Failed to instantiate class com.cydeo.step_definitions.Order_StepDefinitions
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
+	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
+	... 46 more
+Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAMUR', ip: '10.0.20.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.cydeo.utilities.Driver.getDriver(Driver.java:81)
+	at com.cydeo.pages.WebTableLoginPage.&lt;init&gt;(WebTableLoginPage.java:11)
+	at com.cydeo.step_definitions.Order_StepDefinitions.&lt;init&gt;(Order_StepDefinitions.java:20)
+	... 51 more
+Caused by: java.io.IOException: Unable to parse URL: http://100.24.242.134 :4444/wd/hub/session
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:64)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	... 57 more
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -2019,11 +2772,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">user selects product type <span class="argument">&quot;MoneyCog&quot;</span></span>
 
-  <span class="lead-duration duration">0.714</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2046,11 +2799,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters quantity <span class="argument">6</span></span>
 
-  <span class="lead-duration duration">0.498</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2073,11 +2826,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters customer name <span class="argument">&quot;Barbara McClintock&quot;</span></span>
 
-  <span class="lead-duration duration">0.340</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2100,11 +2853,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters street <span class="argument">&quot;London st&quot;</span></span>
 
-  <span class="lead-duration duration">0.297</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2127,11 +2880,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters city <span class="argument">&quot;London&quot;</span></span>
 
-  <span class="lead-duration duration">0.298</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2154,11 +2907,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters state <span class="argument">&quot;England&quot;</span></span>
 
-  <span class="lead-duration duration">0.336</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2181,11 +2934,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters zipcode <span class="argument">&quot;50505&quot;</span></span>
 
-  <span class="lead-duration duration">0.289</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -2208,11 +2961,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user selects credit card type <span class="argument">&quot;Visa&quot;</span></span>
 
-  <span class="lead-duration duration">0.578</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2235,11 +2988,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters credit card number <span class="argument">&quot;1111222233334444&quot;</span></span>
 
-  <span class="lead-duration duration">0.318</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2262,11 +3015,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters expiry date <span class="argument">&quot;12/24&quot;</span></span>
 
-  <span class="lead-duration duration">0.266</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2289,11 +3042,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user enters process order button</span>
 
-  <span class="lead-duration duration">0.264</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2316,11 +3069,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">user should see <span class="argument">&quot;Barbara McClintock&quot;</span> in first row of the web table</span>
 
-  <span class="lead-duration duration">0.195</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2347,9 +3100,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-15">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-24">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2359,17 +3112,99 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-15" class="inner-level collapse collapsable-details ">
+    <div id="after-24" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.145</span>
+  <span class="lead-duration duration">0.006</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-25">
+          <a>Error message</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAMUR', ip: '10.0.20.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: Driver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.cydeo.utilities.Driver.getDriver(Driver.java:81)
+	at com.cydeo.step_definitions.Hooks.teardownScenario(Hooks.java:39)
+Caused by: java.io.IOException: Unable to parse URL: http://100.24.242.134 :4444/wd/hub/session
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:64)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.cydeo.utilities.Driver.getDriver(Driver.java:81)
+	at com.cydeo.step_definitions.Hooks.teardownScenario(Hooks.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:101)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
