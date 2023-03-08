@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: Web table user order feature
--------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.417 s - in Web table user order feature
