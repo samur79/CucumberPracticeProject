@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>No Name (add projectName to cucumber-reporting.properties)</td>
+      <td>07 Mar 2023, 21:57</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">com.fidexio.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</td>
+              <td>8</td>
+              <td class="duration" data-value="620808962">0.620</td>
+              <td class="duration" data-value="620808962">0.637</td>
+              <td class="duration" data-value="4966471700">4.966</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidexio.step_definitions.Login_Functionality.userClicksLoginButton()</td>
+              <td>8</td>
+              <td class="duration" data-value="1221277625">1.221</td>
+              <td class="duration" data-value="1221277625">2.455</td>
+              <td class="duration" data-value="9770221000">9.770</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidexio.step_definitions.Login_Functionality.userEntersInvalidEmail(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="66235975">0.066</td>
+              <td class="duration" data-value="66235975">0.078</td>
+              <td class="duration" data-value="264943900">0.264</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidexio.step_definitions.Login_Functionality.userEntersInvalidPassword(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="56955325">0.056</td>
+              <td class="duration" data-value="56955325">0.062</td>
+              <td class="duration" data-value="227821300">0.227</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidexio.step_definitions.Login_Functionality.userSeeWarningMessage()</td>
+              <td>4</td>
+              <td class="duration" data-value="63743225">0.063</td>
+              <td class="duration" data-value="63743225">0.083</td>
+              <td class="duration" data-value="254972900">0.254</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidexio.step_definitions.Login_Functionality.user_enters_valid_email(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="62224375">0.062</td>
+              <td class="duration" data-value="62224375">0.065</td>
+              <td class="duration" data-value="248897500">0.248</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidexio.step_definitions.Login_Functionality.user_enters_valid_password(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="53116225">0.053</td>
+              <td class="duration" data-value="53116225">0.061</td>
+              <td class="duration" data-value="212464900">0.212</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidexio.step_definitions.Login_Functionality.user_is_on_home_page()</td>
+              <td>4</td>
+              <td class="duration" data-value="3113197600">3.113</td>
+              <td class="duration" data-value="3113197600">3.142</td>
+              <td class="duration" data-value="12452790400">12.452</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidexio.step_definitions.Login_Functionality.user_is_on_login_page()</td>
+              <td>8</td>
+              <td class="duration" data-value="3731258662">3.731</td>
+              <td class="duration" data-value="3731258662">4.177</td>
+              <td class="duration" data-value="29850069300">29.850</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>9</td>
+            <td>48</td>
+            <td class="duration">1.213</td>
+            <td class="duration">29.850</td>
+            <td class="duration">58.248</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
