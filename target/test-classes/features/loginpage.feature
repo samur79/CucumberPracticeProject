@@ -19,7 +19,10 @@ Feature: Login functionality
       | salesmanager64@info.com | salesmanager |
       | posmanager48@info.com   | posmanager   |
       | posmanager64@info.com   | posmanager   |
-
+      | posmanager74@info.com   | posmanager   |
+      | posmanager84@info.com   | posmanager   |
+      | salesmanager41@info.com | salesmanager |
+      | salesmanager61@info.com | salesmanager |
 
   Scenario Outline: "Wrong login/password" should be displayed for invalid (valid username-invalid password and invalid username-valid password) credentials
 
@@ -29,13 +32,19 @@ Feature: Login functionality
     Then user see  warning message
 
     Examples: Email and Password
-      | email                    | password      |
-      | posmanager480@info.com   | posmanager    |
-      | salesmanager640@info.com | salesmanager  |
-      | posmanager48@info.com    | posmanager123 |
-      | salesmanager64@info.com  | posmanager123 |
-      | posmanager614@info.com   | posmanager123 |
-      | posmanager480@info.com   | posmanager234 |
+      | email                     | password               |
+      | posmanager480@info.com    | posmanager             |
+      | salesmanager640@info.com  | salesmanager           |
+      | posmanager48@info.com     | posmanagerTHGFD          |
+      | salesmanager64@info.com   | posmanager^(*          |
+      | posmanager614@info.com    | *+/.posmanager          |
+      | posmanager480@info.com    | posma/*><              |
+      | posmanager4*/@info.com    | \SAK82YWDHI5654        |
+      | salesmanager640@info.com  | !"£$%^*([}@?><         |
+      | posmanager??@info.com     | &*(posmanager123       |
+      | salesmanager++@info.com   | HGSALYsmanager123      |
+      | posmanager614.@info.com   | {}?pogalkGIsmanager123 |
+      | posmanager480@info.com.tr | sossmanager            |
 
   @FIDEX10-346
   Scenario: "Please fill out this field" message should be displayed if the password or username is empty
@@ -65,6 +74,12 @@ Scenario Outline: Verify if the ‘Enter’ key of the keyboard is working corre
     | email                   | password     |
     | salesmanager90@info.com | salesmanager |
     | posmanager60@info.com   | posmanager   |
+    | salesmanager95@info.com | salesmanager |
+    | posmanager63@info.com   | posmanager   |
+    | salesmanager10@info.com | salesmanager |
+    | posmanager100@info.com   | posmanager   |
+    | salesmanager97@info.com | salesmanager |
+    | posmanager69@info.com   | posmanager   |
 
 
   @FIDEX10-349
